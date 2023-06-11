@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box,
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    padding: 0.0rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(48, 48, 48, 0);
+}
+
+header nav{
+    background-color: rgba(24, 24, 24, 0);
+    max-width: 100%;
+    margin: 1 auto;
+    padding: 1.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.90rem;
+    transition: 0.5;
+}
+
+header ul a:hover{
+    text-shadow: 0px 0px 20px rgb(255, 179, 107);
+}
+
+.Pedidos a{
+    transition: 0.5s;
+    color: yellow;
+    font-weight: 550;
+    font-size: 1.05rem;
+    padding: 0 2rem;
+    border: 1px solid yellow
+}
+
+.Pedidos a:hover{
+    background: var(--clr);
+    color:#333;
+    letter-spacing: 0.25em;
+}
+
+main{
+    position: absolute;
+    height:100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+.XVfundo{
+    position: absolute;
+    z-index: -14;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.XIVmontanha{
+    position: absolute;
+    z-index: -13;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.XIIImontanha{
+    position: absolute;
+    z-index: -12;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.XIImontanha{
+    position: absolute;
+    z-index: -11;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.XIchão{
+    position: absolute;
+    z-index: -10;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.Xchão{
+    position: absolute;
+    z-index: -9;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.IXnuves{
+    position: absolute;
+    z-index: -8;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + -0px);
+}
+
+.VIIIchão{
+    position: absolute;
+    z-index: -7;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.VIIchão{
+    position: absolute;
+    z-index: -6;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.VIchão{
+    position: absolute;
+    z-index: -5;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.Vchão{
+    position: absolute;
+    z-index: -4;
+    width: 110%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+}
+
+.IIIfolhas{
+    position: absolute;
+    z-index: -3;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    pointer-events: none;
+}
+
+.IIbase{
+    position: absolute;
+    z-index: -2;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    pointer-events: none;
+}
+
+.Ifolhas{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    pointer-events: none;
+}
+
+.back-video{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    top: calc(50% - 0px);
+    left: calc(50% + 0px);
+    pointer-events: none;
+    align-items: center;
+}
+
+.vignette{
+    position: absolute;
+    z-index: 100;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}

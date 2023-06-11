@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box,
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    padding: 0.0rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 0px solid rgba(250, 250, 250, 0);
+}
+
+header nav{
+    background-color: black;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.90rem;
+    transition: 0.5;
+}
+
+header ul a:hover{
+    text-shadow: white;
+}
+
+.Pedidos a{
+    transition: 0.5s;
+    color: yellow;
+    font-weight: 550;
+    font-size: 1.05rem;
+    padding: 0 2rem;
+    border: 1px solid yellow
+}
+
+.Pedidos a:hover{
+    background: var(--clr);
+    color:#333;
+    letter-spacing: 0.25em;
+}
+
+.selection{
+    align-items: center;
+}
+
+.button{
+    top:70px;
+    position: absolute;
+    width: 900px;
+    height: 850px;
+    top: calc(8% - 0px);
+    left: calc(50% + 0px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+    background-image: url(assets/bandeira.png);
+    background: cover;
+    background-position: center;
+    background-size: 930px 890px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.button:hover{
+    border: 3px solid rgb(255, 242, 0);
+}
+.button2{
+    left: 2%;
+    margin-top: 70px;
+    position: absolute;
+    width: 1065px;
+    height: 415px;
+    top: calc(1% - 0px);
+    left: calc(2% + 0px);
+    background-color: #fff;
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%) ;
+    cursor: pointer;
+}
+
+.button3{
+    left:2%;
+    position: absolute;
+    width: 1270px;
+    height: 430px;
+    top: calc(1% - 0px);
+    left: calc(2% + 0px);
+    margin-top: 488px;
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%) ;
+    cursor: pointer;
+}
+.button2:hover{
+    border: 3px solid rgb(255, 242, 0);
+}
+.button3:hover{
+    border: 3px solid rgb(255, 242, 0);
+}
+
+
+
+
